@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar"
+import Description from "./components/Description"
+import Nature from "./components/Nature"
+import Pets from "./components/Pets"
+import Toys from "./components/Toys"
+import Motivation from "./components/Motivation"
+import Aboutus from "./components/Aboutus"
+import Contactus from "./components/Contactus"
+import Footer from "./components/Footer"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+  return(
+    <div>
+      <Navbar></Navbar>
+      <Description></Description>
+      <Nature></Nature>
+      <Pets></Pets>
+      <Toys></Toys>
+      <Motivation></Motivation>
+      <Aboutus></Aboutus>
+      <Contactus></Contactus>
+      <Footer></Footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
